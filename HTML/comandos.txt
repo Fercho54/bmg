@@ -1,0 +1,11 @@
+CREAR BRANCHES
+crear branch git checkout -b (nombre de branch) ((local))
+git push origin (nombre de branch) ((github))
+
+SUBIR CAMBIOS
+git add (nombre de archivo a subir, ((se usa "." si se quieren añadir TODOS los archivos trabajados))) ((local))
+git commit (añadir comentarios del cambio/s para que este exista en el universo local de mi trabajo git hermoso) ((local))
+git push origin (nombre de branch) ((github)) 
+
+OBTENER CAMBIOS DESDE github
+git pull origin (nombre de branch en la que se desea trabajar) ((github))
