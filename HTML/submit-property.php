@@ -29,6 +29,7 @@
     <!-- Custom Stylesheet -->
     <link type="text/css" rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" id="style_sheet" href="assets/css/skins/default.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/custom-style.css">
 
 </head>
 <body id="top">
@@ -40,7 +41,7 @@
 <!-- main header end -->
 
 <!-- Sub banner start -->
-<div class="sub-banner overview-bgi">
+<div class="sub-banner submit-property-header overview-bgi">
     <div class="container">
         <div class="breadcrumb-area">
             <h1>Submit Property</h1>

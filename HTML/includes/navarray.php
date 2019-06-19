@@ -1,20 +1,20 @@
 <?php 
 	$navItems = array(
-			array(
-				'slug' => "index.php",
-				'title' => 'Inicio'
+			array(                
+				'esp' => "Como Funciona",
+				'eng' => 'How it works'
 			),			
 			array(
-				'slug' => 'process.php',
-				'title' => 'Desarrollo'
+				'esp' => 'process.php',
+				'eng' => 'Desarrollo'
 			),
 			array(
-				'slug' => "Portfolio.php",
-				'title' => 'Portafolio'
+				'esp' => "Portfolio.php",
+				'eng' => 'Portafolio'
 			),
 			array(
-				'slug' => 'contact-us.php',
-				'title' => 'Contácto'
+				'esp' => 'contact-us.php',
+				'eng' => 'Contácto'
 			),
 
 	);

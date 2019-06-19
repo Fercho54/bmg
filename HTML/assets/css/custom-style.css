@@ -1,0 +1,14 @@
+.submit-property-header{
+    background-image: url("https://housingbmg.com/wp-content/uploads/revslider/bmg1/cover_new.jpg")!important;    
+}
+.nav-btn-bmg{
+    margin-top: 15px !important;
+}
+.main-header-container{
+    padding: 0 50px;
+}
+@media (max-width: 992px){
+    .main-header .navbar {        
+        padding-bottom: 10px; 
+    }
+}
