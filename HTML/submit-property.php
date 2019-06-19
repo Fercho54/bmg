@@ -20,6 +20,12 @@
     <link type="text/css" rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="assets/fonts/flaticon/font/flaticon.css">
 
+    <!-- CDN LINKS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker3.css" rel="stylesheet" id="bootstrap-css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <!-- Favicon icon -->
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" >
 
@@ -67,27 +73,69 @@
                 <div class="search-area contact-2">
                     <div class="search-area-inner">
                         <div class="search-contents ">
-                            <form method="GET">
-                                <h3 class="heading">Basic Information</h3>
+                            <form method="GET">                           
+                                <h3 class="heading">What type of listing you want to make</h3>
                                 <div class="row mb-50">
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="form-group">
-                                            <label>Property Title</label>
-                                            <input type="text" name="property-title" class="form-control" placeholder="Property Title" >
-                                        </div>
+                                    <div class="col-sm-3">	
+                                        <input type="radio" name="radio" id="radio3" value="house" class="radio"/>
+                                            <label class="bmg-radio-type" for="radio3"><div><i class="fa fa-home fa-2x"></i><br><span> House/Apartment</span></div></label>
                                     </div>
-                                    <div class="col-lg-4 col-md-6">
+                                    <div class="col-sm-3">	
+                                        <input type="radio" name="radio" id="radio4" value="room" class="radio"/>
+                                        <label class="bmg-radio-type" for="radio4"><div><i class="fa fa-bed fa-2x"></i><br><span> Room(s)</span></div></label>
+                                    </div>                                                            
+                                    
+                                </div>
+
+                                <h3 class="heading">What kind of property you have? House STEP 2</h3>
+                                <div class="row mb-50">
+                                    
+                                    <div class="col-sm-4">
                                         <div class="form-group">
                                             <label>Type</label>
-                                            <select class="selectpicker search-fields" name="Status">
+                                            <select class="selectpicker search-fields" name="house-type">
                                                 <option>Apartment</option>
-                                                <option>House</option>
-                                                <option>Commercial</option>
-                                                <option>Garage</option>
-                                                <option>Lot</option>
+                                                <option>House</option>                                                
+                                                <option>Annexed Housing</option>
                                             </select>
                                         </div>
                                     </div>
+                                    
+                                    <div class="form-group">
+		                <div class='input-group date' id='datepicker'>
+		                    <input type='text' class="form-control" />
+		                    <span class="input-group-addon">
+		                        <span class="glyphicon glyphicon-calendar"></span>
+		                    </span>
+		                </div>
+		            </div>
+                                    
+
+
+
+
+
+
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label>Listing Address</label>
+                                            <input type="text" name="address" class="form-control" placeholder="Address">
+                                        </div>
+                                    </div>
+
+                                </div> 
+
+                                <div class="row mb-50">
+
+                                <h3 class="heading">What kind of property you have?</h3>
+
+                                    <div class="col-sm-12">
+                                        <div class="form-group"> 
+                                            <label>Property Name</label>                                           
+                                            <input type="text" name="property-title" class="form-control" placeholder="Property Title" >
+                                        </div>
+                                    </div>
+                                    
                                     <div class="col-lg-4 col-md-6">
                                         <div class="form-group">
                                             <label>Price</label>
@@ -506,6 +554,24 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+	<script >
+	    $(function () {
+	        $('#datepicker').datepicker({
+	            format: "dd/mm/yyyy",
+	            autoclose: true,
+	            todayHighlight: true,
+		        showOtherMonths: true,
+		        selectOtherMonths: true,
+		        autoclose: true,
+		        changeMonth: true,
+		        changeYear: true,
+		        orientation: "button"
+	        });
+	    });
+	</script>
+
 
 <!-- External JS libraries -->
 <script src="assets/js/jquery-2.2.0.min.js"></script>

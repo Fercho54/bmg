@@ -1000,12 +1000,6 @@ input[type=checkbox]:checked + label:before {
 /** MAIN HEADER **/
 
 
-.nav-container{
-
-}
-
-
-
 #main-header {
     width: 100%;
     background: #FFF;
