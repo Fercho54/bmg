@@ -717,7 +717,6 @@ $(function () {
         $('.option-panel').toggleClass('option-panel-collased');
     });
 });
-
 // mCustomScrollbar initialization
 (function ($) {
     $(window).on('resize', function () {
