@@ -536,28 +536,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </form>
-
-                            <div class="icon-thread">
-<ul>
-<li>
-<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"  checked="checked" title="Nenhum">
-<label class="radio" for="optionsRadios2"><i class="icon-fixed-width fa fa-home"></i></label>
-</li>
-
-<li>
-<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-<label class="radio" for="optionsRadios2"><i class="icon-fixed-width fa fa-home"></i></label>
-</li>
-<li>
-<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-<label class="radio" for="optionsRadios2"><i class="icon-fixed-width fa fa-home"></i></label>
-</li>
-</ul>
-</div>
-
-
-
+                            </form>                       
 
                                 <h3 class="heading">Location</h3>
                                 <div class="row mb-50">
