@@ -73,9 +73,11 @@
                 <div class="search-area contact-2">
                     <div class="search-area-inner">
                         <div class="search-contents ">
-                            <form method="GET">                           
+
+
+                            <form id="form1" method="GET">                           
                                 <h3 class="heading">What type of listing you want to make</h3>
-                                <div class="row mb-50">
+                                <div class="row mb-25">
                                     <div class="col-sm-3">	
                                         <input type="radio" name="radio" id="radio3" value="house" class="radio"/>
                                             <label class="bmg-radio-type" for="radio3"><div><i class="fa fa-home fa-2x"></i><br><span> House/Apartment</span></div></label>
@@ -83,10 +85,18 @@
                                     <div class="col-sm-3">	
                                         <input type="radio" name="radio" id="radio4" value="room" class="radio"/>
                                         <label class="bmg-radio-type" for="radio4"><div><i class="fa fa-bed fa-2x"></i><br><span> Room(s)</span></div></label>
-                                    </div>                                                            
-                                    
+                                    </div>
                                 </div>
+                                <div class="row mb-50">
+                                    <div class="col-sm-3">
+                                        <button type="submit" name="submitNewsletter" class="btn btn-block btn-color">
+                                        Next!
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
 
+                            <form id="form2" method="GET">
                                 <h3 class="heading">What kind of property you have? House STEP 2</h3>
                                 <div class="row mb-50">
                                     
@@ -102,53 +112,141 @@
                                     </div>
                                     
                                     <div class="form-group">
-		                <div class='input-group date' id='datepicker'>
-		                    <input type='text' class="form-control" />
-		                    <span class="input-group-addon">
-		                        <span class="glyphicon glyphicon-calendar"></span>
-		                    </span>
-		                </div>
-		            </div>
+                                        <label>Available From</label>
+		                                <div class='input-group date' id='datepicker'>                                        
+		                                <input type='text' class="form-control" />
+		                                <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>		                                
+		                                </div>
+		                            </div>
                                     
-
-
-
-
-
-
-                                    <div class="col-sm-8">
+                                    <div class="col-sm-12">
                                         <div class="form-group">
                                             <label>Listing Address</label>
                                             <input type="text" name="address" class="form-control" placeholder="Address">
                                         </div>
                                     </div>
 
+                                    <div class="col-sm-3">
+
+                                        <button type="submit" name="submitNewsletter" class="btn btn-block btn-color">
+                                        Next!
+                                        </button>
+                                    </div>
+
                                 </div> 
+                            </form>
+
+                            <form id="form3" method="GET">
 
                                 <div class="row mb-50">
 
-                                <h3 class="heading">What kind of property you have?</h3>
+                                <h3 class="heading">How much you want to earn?</h3>                                                                
 
-                                    <div class="col-sm-12">
-                                        <div class="form-group"> 
-                                            <label>Property Name</label>                                           
-                                            <input type="text" name="property-title" class="form-control" placeholder="Property Title" >
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label>Currency</label>
+                                            <select class="selectpicker search-fields" name="contract1">
+                                                <option>USD</option>
+                                                <option>MXN</option>
+                                                <option>EUR</option>                                                
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <label>Contract</label>
+                                            <select class="selectpicker search-fields" name="contract1">
+                                                <option>1 Month</option>
+                                                <option>2 Months</option>
+                                                <option>3 Months</option>
+                                                <option>4 Months</option>
+                                                <option>5 Months</option>
+                                                <option>6 Months</option>
+                                            </select>
                                         </div>
                                     </div>
                                     
-                                    <div class="col-lg-4 col-md-6">
+                                    <div class="col-sm-6">
                                         <div class="form-group">
                                             <label>Price</label>
-                                            <input type="text" name="price" class="form-control" placeholder="USD">
+                                            <input type="text" name="price" class="form-control" placeholder="MXN (Mexican Pesos)">
                                         </div>
                                     </div>
+
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <label>Contract</label>
+                                            <select class="selectpicker search-fields" name="contract1">
+                                                <option>1 Month</option>
+                                                <option>2 Months</option>
+                                                <option>3 Months</option>
+                                                <option>4 Months</option>
+                                                <option>5 Months</option>
+                                                <option>6 Months</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Price</label>
+                                            <input type="text" name="price" class="form-control" placeholder="MXN (Mexican Pesos)">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <label>Contract</label>
+                                            <select class="selectpicker search-fields" name="contract1">
+                                                <option>1 Month</option>
+                                                <option>2 Months</option>
+                                                <option>3 Months</option>
+                                                <option>4 Months</option>
+                                                <option>5 Months</option>
+                                                <option>6 Months</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Price</label>
+                                            <input type="text" name="price" class="form-control" placeholder="MXN (Mexican Pesos)">
+                                        </div>
+                                    </div>
+
+
                                     <div class="col-lg-4 col-md-6">
                                         <div class="form-group">
-                                            <label>Area/Location</label>
-                                            <input type="text" name="price" class="form-control" placeholder="SqFt">
+                                            <label>Deposit</label>
+                                            <input type="text" name="price" class="form-control" placeholder="We suggest minimum 1 Month of Rent">
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-6">
+                                
+                                <div class="col-sm-3">
+                                        <button type="submit" name="submitNewsletter" class="btn btn-block btn-color">
+                                        Next!
+                                        </button>
+                                    </div>
+                                    </div>
+                            </form>
+
+                            <form id="form4" method="GET"></form>
+                                <h3 class="heading">Property Gallery</h3>
+                                <div class="row mb-60">
+                                    <div class="col-lg-12">
+                                        <div id="myDropZone" class="dropzone dropzone-design">
+                                            <div class="dz-default dz-message"><span>Drop files here to upload</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h3 class="heading">Location</h3>
+                                <div class="row mb-50">
+                                    
+                                <div class="col-lg-4 col-md-6">
                                         <div class="form-group">
                                             <label>Bedrooms</label>
                                             <select class="selectpicker search-fields" name="Status">
@@ -171,19 +269,6 @@
                                             </select>
                                         </div>
                                     </div>
-                                </div>
-
-                                <h3 class="heading">Property Gallery</h3>
-                                <div class="row mb-60">
-                                    <div class="col-lg-12">
-                                        <div id="myDropZone" class="dropzone dropzone-design">
-                                            <div class="dz-default dz-message"><span>Drop files here to upload</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <h3 class="heading">Location</h3>
-                                <div class="row mb-50">
                                     <div class="col-lg-6 col-md-6">
                                         <div class="form-group">
                                             <label>Address</label>
@@ -555,22 +640,6 @@
     </div>
 </div>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
-	<script >
-	    $(function () {
-	        $('#datepicker').datepicker({
-	            format: "dd/mm/yyyy",
-	            autoclose: true,
-	            todayHighlight: true,
-		        showOtherMonths: true,
-		        selectOtherMonths: true,
-		        autoclose: true,
-		        changeMonth: true,
-		        changeYear: true,
-		        orientation: "button"
-	        });
-	    });
-	</script>
 
 
 <!-- External JS libraries -->
@@ -599,6 +668,25 @@
 <script src="assets/js/ie-emulation-modes-warning.js"></script>
 <!-- Custom JS Script -->
 <script  src="assets/js/app.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+	<script >
+	    $(function () {
+	        $('#datepicker').datepicker({
+	            format: "dd/mm/yyyy",
+	            autoclose: true,
+	            todayHighlight: true,
+		        showOtherMonths: true,
+		        selectOtherMonths: true,
+		        autoclose: true,
+		        changeMonth: true,
+		        changeYear: true,
+		        orientation: "button"
+	        });
+	    });
+</script>
+
+
 
 </body>
 </html>
