@@ -77,30 +77,32 @@
 
                             <form id="form1" method="GET">                           
                                 <h3 class="heading">What type of listing you want to make</h3>
-                                <div class="row mb-25">
+                                <div class="row mb-50">
                                     <div class="col-sm-3">	
                                         <input type="radio" name="radio" id="radio3" value="house" class="radio"/>
                                             <label class="bmg-radio-type" for="radio3"><div><i class="fa fa-home fa-2x"></i><br><span> House/Apartment</span></div></label>
                                     </div>
+                                    
                                     <div class="col-sm-3">	
                                         <input type="radio" name="radio" id="radio4" value="room" class="radio"/>
                                         <label class="bmg-radio-type" for="radio4"><div><i class="fa fa-bed fa-2x"></i><br><span> Room(s)</span></div></label>
                                     </div>
-                                </div>
-                                <div class="row mb-50">
-                                    <div class="col-sm-3">
-                                        <button type="submit" name="submitNewsletter" class="btn btn-block btn-color">
-                                        Next!
-                                        </button>
-                                    </div>
-                                </div>
+                                </div>                                
                             </form>
 
                             <form id="form2" method="GET">
                                 <h3 class="heading">What kind of property you have? House STEP 2</h3>
-                                <div class="row mb-50">
+                                <div class="row mb-20"> 
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label>Listing Address</label>
+                                            <input type="text" name="address" class="form-control" placeholder="Address">
+                                        </div>
+                                    </div>
                                     
-                                    <div class="col-sm-4">
+                                </div>
+                                <div class="row mb-50">
+                                    <div class="col-sm-3">
                                         <div class="form-group">
                                             <label>Type</label>
                                             <select class="selectpicker search-fields" name="house-type">
@@ -111,31 +113,42 @@
                                         </div>
                                     </div>
                                     
-                                    <div class="form-group">
-                                        <label>Available From</label>
-		                                <div class='input-group date' id='datepicker'>                                        
-		                                <input type='text' class="form-control" />
-		                                <span class="input-group-addon">
-                                            <span class="glyphicon glyphicon-calendar"></span>
-                                        </span>		                                
-		                                </div>
-		                            </div>
-                                    
-                                    <div class="col-sm-12">
+                                    <div class="col-sm-3">
                                         <div class="form-group">
-                                            <label>Listing Address</label>
-                                            <input type="text" name="address" class="form-control" placeholder="Address">
+                                            <label>Available From</label>
+                                            <div class='input-group date' id='datepicker'>                                        
+                                            <input type='text' class="form-control" />
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>		                                
                                         </div>
                                     </div>
-
+                                    </div>
                                     <div class="col-sm-3">
-
+                                        <div class="form-group">
+                                            <label>Number of tenats</label>
+                                            <input type="text" name="address" class="form-control" placeholder="Maximum capacity">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="form-group">
+                                            <label>Size of your Property</label>
+                                            <input type="text" name="address" class="form-control" placeholder="square meters">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
                                         <button type="submit" name="submitNewsletter" class="btn btn-block btn-color">
                                         Next!
                                         </button>
                                     </div>
+		                        
 
-                                </div> 
+                                </div>
+
+
+
+                                
+                          
                             </form>
 
                             <form id="form3" method="GET">
@@ -233,20 +246,323 @@
                                     </div>
                             </form>
 
-                            <form id="form4" method="GET"></form>
-                                <h3 class="heading">Property Gallery</h3>
+                            <form id="form4" method="GET">  
+                                <h3 class="heading">Tell us about your Home!</h3>
+                                <div class="row mb-20"> 
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label>Beautiful Title</label>
+                                            <input type="text" name="address" class="form-control" placeholder="Give a name to your Home!">
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <div class="row mb-50"> 
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label>Beautiful Description</label>
+                                            <input id="bmg-description" type="text" name="address" class="form-control" placeholder="Tell us more about your house!">
+                                        </div>
+                                    </div>                                    
+                                </div>
+
+                                <div class="row mb-50">                                    
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label>How many Rooms your property have</label>
+                                            <input type="text" name="price" class="form-control" placeholder="Only Numbers > 0">
+                                        </div>
+                                    </div> 
+                                </div>
+                                <h4>Room 1</h4>
+                                <div class="row mb-50">
+                                    
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label>Size</label>
+                                            <input type="text" name="price" class="form-control" placeholder="sqr meters">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label>Private Bathroom?</label>
+                                            <select class="selectpicker search-fields" name="Status">
+                                                <option>Yes</option>
+                                                <option>No</option>                                                
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <label>Upoload Pictures of this specific Room</label>
+                                        <div id="myDropZone1" class="dropzone dropzone-design">
+                                            <div class="dz-default dz-message"><span>Drop files here to upload</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label>Lock on bedroom?</label>
+                                            <select class="selectpicker search-fields" name="Status">
+                                                <option>Yes</option>
+                                                <option>No</option>                                                
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>Room 2</h4>
+                                <div class="row mb-50">
+                                    
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label>Size</label>
+                                            <input type="text" name="price" class="form-control" placeholder="sqr meters">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label>Private Bathroom?</label>
+                                            <select class="selectpicker search-fields" name="Status">
+                                                <option>Yes</option>
+                                                <option>No</option>                                                
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <label>Upoload Pictures of this specific Room</label>
+                                        <div id="myDropZone2" class="dropzone dropzone-design">
+                                            <div class="dz-default dz-message"><span>Drop files here to upload</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label>Lock on bedroom?</label>
+                                            <select class="selectpicker search-fields" name="Status">
+                                                <option>Yes</option>
+                                                <option>No</option>                                                
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>Room 3 </h4>
+                                <div class="row mb-50">
+                                    
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label>Size</label>
+                                            <input type="text" name="price" class="form-control" placeholder="sqr meters">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label>Private Bathroom?</label>
+                                            <select class="selectpicker search-fields" name="Status">
+                                                <option>Yes</option>
+                                                <option>No</option>                                                
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <label>Upoload Pictures of this specific Room</label>
+                                        <div id="myDropZone3" class="dropzone dropzone-design">
+                                            <div class="dz-default dz-message"><span>Drop files here to upload</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label>Lock on bedroom?</label>
+                                            <select class="selectpicker search-fields" name="Status">
+                                                <option>Yes</option>
+                                                <option>No</option>                                                
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h3>Shared Bathrooms</h3>
+                                <div class="row mb-50">
+                                
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label>How Many Shared Bathrooms</label>
+                                            <input type="text" name="price" class="form-control" placeholder="">
+                                        </div>
+                                    </div> 
+                                </div>                               
+                                
+                                <div class="row mb-50">                                
+                                    
+                                    <div class="col-sm-2">
+                                    <h5>Shared Bathroom 1</h5>
+                                        <div class="form-group">
+                                            <div class="form-group">
+                                                <label>Type of Bathroom</label>
+                                                <select class="selectpicker search-fields" name="Status">
+                                                    <option>Complete</option>
+                                                    <option>Half</option>                                                
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                                               
+                                                               
+                                    <div class="col-sm-2">
+                                    <h5>Shared Bathroom 2</h5>
+                                        <div class="form-group">
+                                            <div class="form-group">
+                                                <label>Type of Bathroom</label>
+                                                <select class="selectpicker search-fields" name="Status">
+                                                    <option>Complete</option>
+                                                    <option>Half</option>                                                
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div> 
+
+                                    <div class="col-sm-2">
+                                    <h5>Shared Bathroom 3</h5>
+                                        <div class="form-group">
+                                            <div class="form-group">
+                                                <label>Type of Bathroom</label>
+                                                <select class="selectpicker search-fields" name="Status">
+                                                    <option>Complete</option>
+                                                    <option>Half</option>                                                
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>  
+                            </form>
+
+                            <form id="form5" method="GET">
+                                <h3 class="heading">Common Areas Gallery</h3>
                                 <div class="row mb-60">
                                     <div class="col-lg-12">
                                         <div id="myDropZone" class="dropzone dropzone-design">
                                             <div class="dz-default dz-message"><span>Drop files here to upload</span></div>
                                         </div>
                                     </div>
+                                    <div class="col-sm-3">
+                                        <button type="submit" name="submitNewsletter" class="btn btn-block btn-color">
+                                        Next!
+                                        </button>
+                                    </div>
                                 </div>
+                            </form>
+
+                            <form id="form6" method="GET">
+                                <h3 class="heading">Describe your perfect tenants</h3>
+                                <div class="row mb-60">
+                                    <div class="col-sm-3">
+                                        <div class="form-group">
+                                            <label>Preferred Gender</label>
+                                            <select class="selectpicker search-fields" name="Status">
+                                                <option>Unimportant</option>   
+                                                <option>Females Only</option>
+                                                <option>Males Only</option>                                                                                             
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="form-group">
+                                            <label>Minimum Age</label>
+                                            <select class="selectpicker search-fields" name="Status">
+                                                <option>Unimportant</option>   
+                                                <option>18</option>
+                                                <option>19</option>
+                                                <option>20</option>
+                                                <option>21</option>
+                                                <option>22</option>
+                                                <option>23</option>
+                                                <option>24</option>
+                                                <option>25</option>
+                                                <option>26</option>
+                                                <option>27</option>
+                                                <option>28</option>
+                                                <option>29</option>
+                                                <option>30</option>
+                                                <option>31</option>
+                                                <option>32</option>
+                                                <option>33</option>
+                                                <option>34</option>
+                                                <option>35</option>
+                                                <option>36</option>
+                                                <option>37</option>
+                                                <option>38</option>
+                                                <option>39</option>
+                                                <option>40+</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="form-group">
+                                            <label>Maximum Age</label>
+                                            <select class="selectpicker search-fields" name="Status">
+                                                <option>Unimportant</option>   
+                                                <option>18</option>
+                                                <option>19</option>
+                                                <option>20</option>
+                                                <option>21</option>
+                                                <option>22</option>
+                                                <option>23</option>
+                                                <option>24</option>
+                                                <option>25</option>
+                                                <option>26</option>
+                                                <option>27</option>
+                                                <option>28</option>
+                                                <option>29</option>
+                                                <option>30</option>
+                                                <option>31</option>
+                                                <option>32</option>
+                                                <option>33</option>
+                                                <option>34</option>
+                                                <option>35</option>
+                                                <option>36</option>
+                                                <option>37</option>
+                                                <option>38</option>
+                                                <option>39</option>
+                                                <option>40+</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="form-group">
+                                            <label>Couples Allowed</label>
+                                            <select class="selectpicker search-fields" name="Status">
+                                                <option>Yes</option>   
+                                                <option>No</option>                                                
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <div class="icon-thread">
+<ul>
+<li>
+<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"  checked="checked" title="Nenhum">
+<label class="radio" for="optionsRadios2"><i class="icon-fixed-width fa fa-home"></i></label>
+</li>
+
+<li>
+<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+<label class="radio" for="optionsRadios2"><i class="icon-fixed-width fa fa-home"></i></label>
+</li>
+<li>
+<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+<label class="radio" for="optionsRadios2"><i class="icon-fixed-width fa fa-home"></i></label>
+</li>
+</ul>
+</div>
+
+
+
 
                                 <h3 class="heading">Location</h3>
                                 <div class="row mb-50">
                                     
-                                <div class="col-lg-4 col-md-6">
+                                    <div class="col-lg-4 col-md-6">
                                         <div class="form-group">
                                             <label>Bedrooms</label>
                                             <select class="selectpicker search-fields" name="Status">
@@ -256,7 +572,7 @@
                                                 <option>4</option>
                                             </select>
                                         </div>
-                                    </div>
+                                    </div>  
                                     <div class="col-lg-4 col-md-6">
                                         <div class="form-group">
                                             <label>Bathroom</label>
