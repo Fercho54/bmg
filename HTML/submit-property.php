@@ -74,39 +74,35 @@
                     <div class="search-area-inner">
                         <div class="search-contents ">
 
-
-                            <form id="form1" method="GET">                           
+                            <form method="POST" action="updatePropiedadesTest.php">                           
                                 <h3 class="heading">What type of listing you want to make</h3>
                                 <div class="row mb-25">
                                     <div class="col-sm-3">	
-                                        <input type="radio" name="radio" id="radio3" value="house" class="radio"/>
-                                            <label class="bmg-radio-type" for="radio3"><div><i class="fa fa-home fa-2x"></i><br><span> House/Apartment</span></div></label>
+                                        <input type="radio" name="casa" id="casa" value="house" class="radio"/>
+                                            <label class="bmg-radio-type" for="casa"><div><i class="fa fa-home fa-2x"></i><br><span> House/Apartment</span></div></label>
                                     </div>
                                     <div class="col-sm-3">	
-                                        <input type="radio" name="radio" id="radio4" value="room" class="radio"/>
-                                        <label class="bmg-radio-type" for="radio4"><div><i class="fa fa-bed fa-2x"></i><br><span> Room(s)</span></div></label>
+                                        <input type="radio" name="cuarto" id="cuarto" value="room" class="radio"/>
+                                        <label class="bmg-radio-type" for="cuarto"><div><i class="fa fa-bed fa-2x"></i><br><span> Room(s)</span></div></label>
                                     </div>
                                 </div>
                                 <div class="row mb-50">
                                     <div class="col-sm-3">
-                                        <button type="submit" name="submitNewsletter" class="btn btn-block btn-color">
+                                        <button type="submit" name="asdfasdf" class="btn btn-block btn-color">
                                         Next!
                                         </button>
                                     </div>
                                 </div>
-                            </form>
-
-                            <form id="form2" method="GET">
                                 <h3 class="heading">What kind of property you have? House STEP 2</h3>
                                 <div class="row mb-50">
                                     
                                     <div class="col-sm-4">
                                         <div class="form-group">
                                             <label>Type</label>
-                                            <select class="selectpicker search-fields" name="house-type">
-                                                <option>Apartment</option>
-                                                <option>House</option>                                                
-                                                <option>Annexed Housing</option>
+                                            <select class="selectpicker search-fields" id='tipoCasa' name="tipoCasa">
+                                                <option value='2'>Apartment</option>
+                                                <option value='1'>House</option>                                                
+                                                <option value='3'> Annexed Housing</option>
                                             </select>
                                         </div>
                                     </div>
@@ -114,7 +110,7 @@
                                     <div class="form-group">
                                         <label>Available From</label>
 		                                <div class='input-group date' id='datepicker'>                                        
-		                                <input type='text' class="form-control" />
+		                                <input type='text'id='disponibilidad' name='disponibilidad' class="form-control" />
 		                                <span class="input-group-addon">
                                             <span class="glyphicon glyphicon-calendar"></span>
                                         </span>		                                
@@ -124,7 +120,7 @@
                                     <div class="col-sm-12">
                                         <div class="form-group">
                                             <label>Listing Address</label>
-                                            <input type="text" name="address" class="form-control" placeholder="Address">
+                                            <input type="text" id='direccion' name="direccion" class="form-control" placeholder="Address">
                                         </div>
                                     </div>
 
@@ -136,10 +132,6 @@
                                     </div>
 
                                 </div> 
-                            </form>
-
-                            <form id="form3" method="GET">
-
                                 <div class="row mb-50">
 
                                 <h3 class="heading">How much you want to earn?</h3>                                                                
@@ -147,7 +139,7 @@
                                     <div class="col-sm-4">
                                         <div class="form-group">
                                             <label>Currency</label>
-                                            <select class="selectpicker search-fields" name="contract1">
+                                            <select class="selectpicker search-fields" id='moneda' name="moneda">
                                                 <option>USD</option>
                                                 <option>MXN</option>
                                                 <option>EUR</option>                                                
@@ -157,7 +149,7 @@
                                     <div class="col-lg-6 col-md-6">
                                         <div class="form-group">
                                             <label>Contract</label>
-                                            <select class="selectpicker search-fields" name="contract1">
+                                            <select class="selectpicker search-fields" id='mesesContrato1' name="mesesContrato1">
                                                 <option>1 Month</option>
                                                 <option>2 Months</option>
                                                 <option>3 Months</option>
@@ -171,14 +163,14 @@
                                     <div class="col-sm-6">
                                         <div class="form-group">
                                             <label>Price</label>
-                                            <input type="text" name="price" class="form-control" placeholder="MXN (Mexican Pesos)">
+                                            <input type="text" name="precio1" class="form-control" id='precio1' placeholder="MXN (Mexican Pesos)">
                                         </div>
                                     </div>
 
                                     <div class="col-lg-6 col-md-6">
                                         <div class="form-group">
                                             <label>Contract</label>
-                                            <select class="selectpicker search-fields" name="contract1">
+                                            <select class="selectpicker search-fields" id='mesesContrato2' name="mesesContrato2">
                                                 <option>1 Month</option>
                                                 <option>2 Months</option>
                                                 <option>3 Months</option>
@@ -192,14 +184,14 @@
                                     <div class="col-sm-6">
                                         <div class="form-group">
                                             <label>Price</label>
-                                            <input type="text" name="price" class="form-control" placeholder="MXN (Mexican Pesos)">
+                                            <input type="text" name="precio2" class="form-control" id='precio2' placeholder="MXN (Mexican Pesos)">
                                         </div>
                                     </div>
 
                                     <div class="col-lg-6 col-md-6">
                                         <div class="form-group">
                                             <label>Contract</label>
-                                            <select class="selectpicker search-fields" name="contract1">
+                                            <select class="selectpicker search-fields" id='mesesContrato3' name="mesesContrato3">
                                                 <option>1 Month</option>
                                                 <option>2 Months</option>
                                                 <option>3 Months</option>
@@ -213,7 +205,7 @@
                                     <div class="col-sm-6">
                                         <div class="form-group">
                                             <label>Price</label>
-                                            <input type="text" name="price" class="form-control" placeholder="MXN (Mexican Pesos)">
+                                            <input type="text" name="precio3" class="form-control" id='precio3' placeholder="MXN (Mexican Pesos)">
                                         </div>
                                     </div>
 
@@ -221,7 +213,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="form-group">
                                             <label>Deposit</label>
-                                            <input type="text" name="price" class="form-control" placeholder="We suggest minimum 1 Month of Rent">
+                                            <input type="text" name="deposito" class="form-control" id='deposito' placeholder="We suggest minimum 1 Month of Rent">
                                         </div>
                                     </div>
                                 
@@ -231,9 +223,7 @@
                                         </button>
                                     </div>
                                     </div>
-                            </form>
 
-                            <form id="form4" method="GET"></form>
                                 <h3 class="heading">Property Gallery</h3>
                                 <div class="row mb-60">
                                     <div class="col-lg-12">
@@ -249,7 +239,7 @@
                                 <div class="col-lg-4 col-md-6">
                                         <div class="form-group">
                                             <label>Bedrooms</label>
-                                            <select class="selectpicker search-fields" name="Status">
+                                            <select class="selectpicker search-fields" id='cuartos' name="cuartos">
                                                 <option>1</option>
                                                 <option>2</option>
                                                 <option>3</option>
@@ -260,7 +250,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="form-group">
                                             <label>Bathroom</label>
-                                            <select class="selectpicker search-fields" name="Status">
+                                            <select class="selectpicker search-fields" id='banios' name="banios">
                                                 <option>1</option>
                                                 <option>2</option>
                                                 <option>3</option>
@@ -272,13 +262,13 @@
                                     <div class="col-lg-6 col-md-6">
                                         <div class="form-group">
                                             <label>Address</label>
-                                            <input type="text" name="address" class="form-control" placeholder="Address">
+                                            <input type="text" name="direccion2" class="form-control" id='direccion2' placeholder="Address">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="form-group">
                                             <label>City</label>
-                                            <select class="selectpicker search-fields" name="Status">
+                                            <select class="selectpicker search-fields" id='ciudad' name="ciudad">
                                                 <option>Choose City</option>
                                                 <option>New York</option>
                                                 <option>Chicago</option>
@@ -291,7 +281,7 @@
                                     <div class="col-lg-6 col-md-6">
                                         <div class="form-group">
                                             <label>State</label>
-                                            <select class="selectpicker search-fields" name="Status">
+                                            <select class="selectpicker search-fields" id='estado' name="estado">
                                                 <option>Choose State</option>
                                                 <option>Alabama</option>
                                                 <option>California</option>
@@ -303,8 +293,21 @@
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="form-group">
+                                            <label>Country</label>
+                                            <select class="selectpicker search-fields" id='pais' name="pais">
+                                                <option>Choose Country</option>
+                                                <option>Mexico</option>
+                                                <option>United States</option>
+                                                <option>Canada</option>
+                                                <option>England</option>
+                                                <option>France</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
                                             <label>Postal Code</label>
-                                            <input type="text" name="postal-code" class="form-control" placeholder="Postal Code">
+                                            <input type="text" name="codigoPostal" class="form-control" id='codigoPostal' placeholder="Postal Code">
                                         </div>
                                     </div>
                                 </div>
@@ -450,7 +453,9 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
-                                        <a href="index.html" class="btn btn-md btn-color">Preview</a>
+                                        <button type="submit" name="submitTest" class="btn btn-block btn-color">
+										Click Me!
+										</button>
                                     </div>
                                 </div>
                             </form>
@@ -577,7 +582,7 @@
                                 <input type="text" class="form-contact" name="email" placeholder="Enter Address">
                             </p>
                             <p>
-                                <button type="submit" name="submitNewsletter" class="btn btn-block btn-color">
+                                <button type="submit" id='submitTest' name="submitNewsletter" class="btn btn-block btn-color">
                                     Subscribe
                                 </button>
                             </p>
@@ -656,7 +661,7 @@
 <script src="assets/js/jquery.scrollUp.js"></script>
 <script src="assets/js/particles.min.js"></script>
 <script src="assets/js/typed.min.js"></script>
-<script src="assets/js/dropzone.js"></script>
+<!--<script src="assets/js/dropzone.js"></script>-->
 <script src="assets/js/jquery.mb.YTPlayer.js"></script>
 <script src="assets/js/leaflet.js"></script>
 <script src="assets/js/leaflet-providers.js"></script>
