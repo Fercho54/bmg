@@ -7,7 +7,7 @@
             <div class="col-12">
                 <nav class="navbar navbar-expand-lg navbar-light rounded">
                     <a class="navbar-brand logo navbar-brand d-flex w-50 mr-auto" href="index.html">
-                        <img src="assets/img/logos/logo-white-bmg.png" alt="logo">
+                        <img src="assets/img/logos/logo.png" alt="logo">
                     </a>          
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="fa fa-bars"></span>

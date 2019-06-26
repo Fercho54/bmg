@@ -1,6 +1,6 @@
-let contractfullhousenumber = 1;
 
 function housecontracts() {
+    var contractfullhousenumber = 1;
     //Create contract div dynamically perrrrrro
     
     let contractparentdiv = document.createElement("div");
@@ -17,7 +17,7 @@ function housecontracts() {
     selectcontract.className = "selectpicker search-fields";
     selectcontract.name = "contract" + contractfullhousenumber;
 
-    let selectcontractoptions = document.createElement("option");
+    
    
 
     //Assign different attributes to the element. 
@@ -57,21 +57,15 @@ function housecontracts() {
     label.appendChild(labeltext);
     contractgroup.appendChild(selectcontract);    
     selectcontract.appendChild(selectcontractoptions);
-    let selectcontractoptionsmonth = document.createTextNode("pene");
+    
     selectcontractoptions.appendChild(selectcontractoptionsmonth);
 
-    for (var i = 1; i <= 6; i++){
-        selectcontract.appendChild(selectcontractoptions);
-        let selectcontractoptionsmonth = document.createTextNode(i+"Months");
-        selectcontractoptions.value(selectcontractoptionsmonth);
-
-    }
+    var selectcontractoptions = document.createElement("");
+    print (selectcontractoptions);
+    var i;
      
-    
-  }
   document.getElementById("addcontracthouse").onclick = function() {
     housecontracts();    
-
   };
   
 
