@@ -90,12 +90,4 @@ function housecontracts() {
      }
 
 
-     function createElementHtml(id,tagname){
-        var containerdiv = document.createElement('div'),
-            nwtag = document.createElement(tagname);
-        nwtag.id = id;
-        containerdiv.appendChild(nwtag);
-        return containerdiv.innerHTML;
-      }
-      //usage
-      createElementHtml('id1','div'); //=> <div id="id1"></div>
+   
