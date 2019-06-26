@@ -2322,7 +2322,7 @@
 <!-- External JS libraries -->
 <script src="assets/js/jquery-2.2.0.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
-
+<script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery.selectBox.js"></script>
 <script src="assets/js/rangeslider.js"></script>
 <script src="assets/js/jquery.magnific-popup.min.js"></script>
